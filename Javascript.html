@@ -1,0 +1,46 @@
+<body>
+
+    <h2  id = "title">Classes: the Basics</h2>
+
+    <script type="text/javascript">
+
+    class Rectangle{
+        constructor(_width,_height,_color){
+            console.log("The Rectangle is created")
+            this.width = _width;
+            this.height = _height;
+            this.color = _color;
+        }
+        getArea(){
+        return this.width * this.height;
+      }
+        printDescription(){
+            console.log(`I am a rectangle of ${this.width} x  ${this.height} and I am ${this.color} hehe`);
+        }
+    }
+    
+
+
+    let myRectangle = new Rectangle(3,5,"blue");
+    // console.log(myRectangle)
+    console.log(myRectangle.getArea())
+    myRectangle.printDescription();
+
+    class Square {
+        constructor(_width2){
+            this.width2 = _width2;
+            this.height2 = _width2;
+        }
+
+        getArea(){
+            return this.width2 * this.height2;
+        }
+
+        printDescription2(){
+            console.log(`This square's width and height is ${this.width2} , ${this.height2} and has an area of ${square1.getArea()}`)
+        }
+    }
+        let square1 = new Square(5);
+        square1.printDescription2();
+    </script>
+</body>
